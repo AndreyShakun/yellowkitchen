@@ -1422,11 +1422,10 @@ body::after {
 }
 
 .no-webp .page__about{
-   }
+  background: url("../img/content/bg.png") 0 0 no-repeat; }
 
 .page__about {
-  background: url("../img/content/bg.png") 0 0 no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 @supports (margin-top: clamp( 1.875rem , 1.256443299rem  +  3.0927835052vw , 3.75rem )) {
