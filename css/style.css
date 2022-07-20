@@ -1425,7 +1425,7 @@ body::after {
   background: url("../img/content/bg.png") 0 0 no-repeat; }
 
 .page__about {
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 @supports (margin-top: clamp( 1.875rem , 1.256443299rem  +  3.0927835052vw , 3.75rem )) {
