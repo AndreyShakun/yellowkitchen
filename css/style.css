@@ -1424,7 +1424,7 @@ body::after {
 .no-webp .page__about{
   background: url("../img/content/bg.png") 0 0 no-repeat; }
 
-.page__about {
+.page__about.about {
   background-size: cover;
 }
 
