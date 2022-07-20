@@ -1422,10 +1422,13 @@ body::after {
 }
 
 .no-webp .page__about{
-  background: url("../img/content/bg.png") 0 0 no-repeat; }
+  background: url("../img/content/bg.png"); }
 
 .page__about {
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top/left;
+  height: 100%;
 }
 
 @supports (margin-top: clamp( 1.875rem , 1.256443299rem  +  3.0927835052vw , 3.75rem )) {
@@ -2507,6 +2510,16 @@ body::after {
     width: 1.875rem;
     height: 1.875rem;
   }
+
+  .about__count::before {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .about__count::after {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
 }
 
 @media (any-hover: hover) {
@@ -2543,4 +2556,4 @@ body::after {
   }
 }
 
-.webp .page__about{ background: url(../img/content/bg.webp) 0 0 no-repeat; }
+.webp .page__about{ background: url(../img/content/bg.webp); }
