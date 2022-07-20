@@ -1422,7 +1422,9 @@ body::after {
 }
 
 .no-webp .page__about{
-  background: url("../img/content/bg.png") 0 0 no-repeat; }
+  background: url("../img/content/bg.png") 0 0 no-repeat;
+  background-size: cover;
+}
 
 .page__about {
   background-size: auto 100%;
