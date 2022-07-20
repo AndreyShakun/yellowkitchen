@@ -38,8 +38,12 @@
 			</div>
 		</div>
 		<div class="rootpage__screen">
-			<picture><source srcset="img/screen-pc.webp" type="image/webp"><img src="img/screen-pc.png" class="screen-pc" alt="pc" /></picture>
-			<picture><source srcset="img/screen-mobile.webp" type="image/webp"><img src="img/screen-mobile.png" class="screen-mobile" alt="pc" /></picture>
+			<div class="screen-pc">
+				<picture><source srcset="img/screen-pc.webp" type="image/webp"><img src="img/screen-pc.png" class="" alt="pc" /></picture>
+			</div>
+			<div class="screen-mobile">
+				<picture><source srcset="img/screen-mobile.webp" type="image/webp"><img src="img/screen-mobile.png" alt="pc" /></picture>
+			</div>
 		</div>
 		<div class="rootpage__footer">
 			<div class="rootpage__tnx">
@@ -89,6 +93,7 @@
 	}
 
 	a {
+		color: #fff;
 		text-decoration: underline;
 
 	}
@@ -228,26 +233,32 @@
 	}
 
 	.screen-pc {
-		width: 70%;
-		height: 70%;
+		flex: 0 1 70%;
 		padding: 1rem;
+	}
+
+	.screen-pc img {
+		width: 100%;
 	}
 
 	@media (max-width: 767px) {
 		.screen-pc {
-			width: 100%;
-			height: 100%;
+			flex: 0 1 100%;
 		}
 	}
 
 	.screen-mobile {
-		width: 30%;
+		flex: 0 1 30%;
 		padding: 1rem;
+	}
+
+	.screen-mobile img {
+		width: 100%;
 	}
 
 	@media (max-width: 767px) {
 		.screen-mobile {
-			width: 50%;
+			flex: 0 1 100%;
 		}
 	}
 
